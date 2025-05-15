@@ -1,0 +1,13 @@
+services:
+  auth:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - mydata:/app/data
+    env_file:
+      - .env
+
+volumes:
+  mydata:
+  
